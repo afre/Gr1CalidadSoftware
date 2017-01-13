@@ -1,0 +1,647 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio 12.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="12.0">
+ <Namespaces>
+  <Namespace Name="ReproductorMp3">
+   <Messages>
+    <Message Id="Mp" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2017-01-13 22:47:10Z" FixCategory="Breaking">
+     <Issue Name="Namespace" Certainty="85" Level="Error">Corrija el uso de mayúsculas y minúsculas en 'Mp' en el nombre del espacio de nombres 'ReproductorMp3' cambiándolo a 'MP'.</Issue>
+    </Message>
+   </Messages>
+  </Namespace>
+ </Namespaces>
+ <Targets>
+  <Target Name="C:\Users\david\Downloads\Reproductor-master\Reproductor\Reproductor\bin\Debug\ReproductorMp3.exe">
+   <Modules>
+    <Module Name="reproductormp3.exe">
+     <Messages>
+      <Message TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210" Status="Active" Created="2017-01-13 22:47:10Z" FixCategory="NonBreaking">
+       <Issue Name="NoStrongName" Certainty="95" Level="CriticalError">Firme 'ReproductorMp3.exe' con una clave de nombre seguro.</Issue>
+      </Message>
+      <Message Id="Mp" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2017-01-13 22:47:10Z" FixCategory="Breaking">
+       <Issue Name="Assembly" Certainty="85" Level="Error">Corrija el uso de mayúsculas y minúsculas en 'Mp' en el nombre del ensamblado 'ReproductorMp3.exe' cambiándolo a 'MP'.</Issue>
+      </Message>
+      <Message TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014" Status="Active" Created="2017-01-13 22:47:10Z" FixCategory="NonBreaking">
+       <Issue Certainty="95" Level="Error">Marque 'ReproductorMp3.exe' con CLSCompliant(true) porque expone tipos visibles externamente.</Issue>
+      </Message>
+      <Message TypeName="MarkAssembliesWithComVisible" Category="Microsoft.Design" CheckId="CA1017" Status="Active" Created="2017-01-13 22:47:10Z" FixCategory="NonBreaking">
+       <Issue Name="NoAttribute" Certainty="95" Level="CriticalError">Puesto que 'ReproductorMp3.exe' expone tipos visibles externamente, márquelo con ComVisible(false) en el nivel de ensamblado y después marque todos los tipos del ensamblado que se deben exponer a clientes COM con ComVisible(true).</Issue>
+      </Message>
+      <Message TypeName="MarkAssembliesWithNeutralResourcesLanguage" Category="Microsoft.Performance" CheckId="CA1824" Status="Active" Created="2017-01-13 22:47:10Z" FixCategory="NonBreaking">
+       <Issue Certainty="95" Level="Warning">Puesto que el ensamblado 'ReproductorMp3.exe' contiene un archivo de recursos basado en ResX, márquelo con el atributo NeutralResourcesLanguage, especificando el lenguaje de los recursos del ensamblado. Esto puede mejorar el rendimiento de las búsquedas la primera vez que se recupera un recurso.</Issue>
+      </Message>
+     </Messages>
+     <Namespaces>
+      <Namespace Name="ReproductorMp3">
+       <Types>
+        <Type Name="Form1" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#AgregarArchivos(System.String)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="extension" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2017-01-13 22:47:10Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="c:\Users\david\Downloads\Reproductor-master\Reproductor\Reproductor" File="Form1.cs" Line="504">'Form1.AgregarArchivos(string)' declara una variable, 'extension', de tipo 'string', que no se usa nunca o sólo se asigna. Use esta variable o quítela.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#button2_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.Windows.Forms.Control.set_Text(System.String)" TypeName="No pasar cadenas literal como parámetros localizados" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2017-01-13 22:47:10Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\david\Downloads\Reproductor-master\Reproductor\Reproductor" File="Form1.cs" Line="422">El método 'Form1.button2_Click(object, EventArgs)' pasa una cadena literal como parámetro 'value' de una llamada a 'Control.Text.set(string)'. En su lugar, recupere las siguientes cadenas de una tabla de recursos: "&amp;Continuar".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\david\Downloads\Reproductor-master\Reproductor\Reproductor" File="Form1.cs" Line="431">El método 'Form1.button2_Click(object, EventArgs)' pasa una cadena literal como parámetro 'value' de una llamada a 'Control.Text.set(string)'. En su lugar, recupere las siguientes cadenas de una tabla de recursos: "&amp;Pausar".</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DetenerReproduccion()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.Windows.Forms.Control.set_Text(System.String)" TypeName="No pasar cadenas literal como parámetros localizados" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2017-01-13 22:47:10Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\david\Downloads\Reproductor-master\Reproductor\Reproductor" File="Form1.cs" Line="656">El método 'Form1.DetenerReproduccion()' pasa una cadena literal como parámetro 'value' de una llamada a 'Control.Text.set(string)'. En su lugar, recupere las siguientes cadenas de una tabla de recursos: "&amp;Pausar".</Issue>
+            </Message>
+            <Message Id="System.Windows.Forms.StatusBarPanel.set_Text(System.String)" TypeName="No pasar cadenas literal como parámetros localizados" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2017-01-13 22:47:10Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\david\Downloads\Reproductor-master\Reproductor\Reproductor" File="Form1.cs" Line="659">El método 'Form1.DetenerReproduccion()' pasa una cadena literal como parámetro 'value' de una llamada a 'StatusBarPanel.Text.set(string)'. En su lugar, recupere las siguientes cadenas de una tabla de recursos: "Listo".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\david\Downloads\Reproductor-master\Reproductor\Reproductor" File="Form1.cs" Line="657">El método 'Form1.DetenerReproduccion()' pasa una cadena literal como parámetro 'value' de una llamada a 'StatusBarPanel.Text.set(string)'. En su lugar, recupere las siguientes cadenas de una tabla de recursos: "Tiempo Total:".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\david\Downloads\Reproductor-master\Reproductor\Reproductor" File="Form1.cs" Line="658">El método 'Form1.DetenerReproduccion()' pasa una cadena literal como parámetro 'value' de una llamada a 'StatusBarPanel.Text.set(string)'. En su lugar, recupere las siguientes cadenas de una tabla de recursos: "Tiempo Transcurrido:".</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Form1_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.Windows.Forms.MessageBox.Show(System.String,System.String,System.Windows.Forms.MessageBoxButtons,System.Windows.Forms.MessageBoxIcon)" TypeName="No pasar cadenas literal como parámetros localizados" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2017-01-13 22:47:10Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\david\Downloads\Reproductor-master\Reproductor\Reproductor" File="Form1.cs" Line="348">El método 'Form1.Form1_Load(object, EventArgs)' pasa una cadena literal como parámetro 'caption' de una llamada a 'MessageBox.Show(string, string, MessageBoxButtons, MessageBoxIcon)'. En su lugar, recupere las siguientes cadenas de una tabla de recursos: "Dispositivos no encontrados".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\david\Downloads\Reproductor-master\Reproductor\Reproductor" File="Form1.cs" Line="348">El método 'Form1.Form1_Load(object, EventArgs)' pasa una cadena literal como parámetro 'text' de una llamada a 'MessageBox.Show(string, string, MessageBoxButtons, MessageBoxIcon)'. En su lugar, recupere las siguientes cadenas de una tabla de recursos: "No se han encontrado dispositivos de salida de audio \n presentes en el sistema".</Issue>
+            </Message>
+            <Message Id="System.Windows.Forms.StatusBarPanel.set_Text(System.String)" TypeName="No pasar cadenas literal como parámetros localizados" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2017-01-13 22:47:10Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\david\Downloads\Reproductor-master\Reproductor\Reproductor" File="Form1.cs" Line="338">El método 'Form1.Form1_Load(object, EventArgs)' pasa una cadena literal como parámetro 'value' de una llamada a 'StatusBarPanel.Text.set(string)'. En su lugar, recupere las siguientes cadenas de una tabla de recursos: "Listo".</Issue>
+            </Message>
+            <Message TypeName="SpecifyMessageBoxOptions" Category="Microsoft.Globalization" CheckId="CA1300" Status="Active" Created="2017-01-13 22:47:10Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\Users\david\Downloads\Reproductor-master\Reproductor\Reproductor" File="Form1.cs" Line="348">Cambie 'Form1.Form1_Load(object, EventArgs)' para que llame a la sobrecarga MessageBox.Show que especifica MessageBoxOptions y asegúrese de establecer MessageBoxOptions.RightAlign y MessageBoxOptions.RtlReading si RightToLeft está establecido en RightToLeft.Yes en el control primario.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#InitializeComponent()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.Windows.Forms.Control.set_Text(System.String)" TypeName="No pasar cadenas literal como parámetros localizados" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2017-01-13 22:47:10Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\david\Downloads\Reproductor-master\Reproductor\Reproductor" File="Form1.cs" Line="136">El método 'Form1.InitializeComponent()' pasa una cadena literal como parámetro 'value' de una llamada a 'Control.Text.set(string)'. En su lugar, recupere las siguientes cadenas de una tabla de recursos: "&amp;Detener".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\david\Downloads\Reproductor-master\Reproductor\Reproductor" File="Form1.cs" Line="126">El método 'Form1.InitializeComponent()' pasa una cadena literal como parámetro 'value' de una llamada a 'Control.Text.set(string)'. En su lugar, recupere las siguientes cadenas de una tabla de recursos: "&amp;Pausar".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\david\Downloads\Reproductor-master\Reproductor\Reproductor" File="Form1.cs" Line="116">El método 'Form1.InitializeComponent()' pasa una cadena literal como parámetro 'value' de una llamada a 'Control.Text.set(string)'. En su lugar, recupere las siguientes cadenas de una tabla de recursos: "&amp;Reproducir".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\david\Downloads\Reproductor-master\Reproductor\Reproductor" File="Form1.cs" Line="146">El método 'Form1.InitializeComponent()' pasa una cadena literal como parámetro 'value' de una llamada a 'Control.Text.set(string)'. En su lugar, recupere las siguientes cadenas de una tabla de recursos: "&amp;Salir".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\david\Downloads\Reproductor-master\Reproductor\Reproductor" File="Form1.cs" Line="280">El método 'Form1.InitializeComponent()' pasa una cadena literal como parámetro 'value' de una llamada a 'Control.Text.set(string)'. En su lugar, recupere las siguientes cadenas de una tabla de recursos: "Anterior".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\david\Downloads\Reproductor-master\Reproductor\Reproductor" File="Form1.cs" Line="157">El método 'Form1.InitializeComponent()' pasa una cadena literal como parámetro 'value' de una llamada a 'Control.Text.set(string)'. En su lugar, recupere las siguientes cadenas de una tabla de recursos: "Examinar".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\david\Downloads\Reproductor-master\Reproductor\Reproductor" File="Form1.cs" Line="244">El método 'Form1.InitializeComponent()' pasa una cadena literal como parámetro 'value' de una llamada a 'Control.Text.set(string)'. En su lugar, recupere las siguientes cadenas de una tabla de recursos: "Lista de Reproducción".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\david\Downloads\Reproductor-master\Reproductor\Reproductor" File="Form1.cs" Line="193">El método 'Form1.InitializeComponent()' pasa una cadena literal como parámetro 'value' de una llamada a 'Control.Text.set(string)'. En su lugar, recupere las siguientes cadenas de una tabla de recursos: "Quitar Elementos".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\david\Downloads\Reproductor-master\Reproductor\Reproductor" File="Form1.cs" Line="261">El método 'Form1.InitializeComponent()' pasa una cadena literal como parámetro 'value' de una llamada a 'Control.Text.set(string)'. En su lugar, recupere las siguientes cadenas de una tabla de recursos: "Quitar Seleccionado".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\david\Downloads\Reproductor-master\Reproductor\Reproductor" File="Form1.cs" Line="252">El método 'Form1.InitializeComponent()' pasa una cadena literal como parámetro 'value' de una llamada a 'Control.Text.set(string)'. En su lugar, recupere las siguientes cadenas de una tabla de recursos: "Recorrer la lista".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\david\Downloads\Reproductor-master\Reproductor\Reproductor" File="Form1.cs" Line="309">El método 'Form1.InitializeComponent()' pasa una cadena literal como parámetro 'value' de una llamada a 'Control.Text.set(string)'. En su lugar, recupere las siguientes cadenas de una tabla de recursos: "Reproductor de mp3".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\david\Downloads\Reproductor-master\Reproductor\Reproductor" File="Form1.cs" Line="270">El método 'Form1.InitializeComponent()' pasa una cadena literal como parámetro 'value' de una llamada a 'Control.Text.set(string)'. En su lugar, recupere las siguientes cadenas de una tabla de recursos: "Siguiente".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\david\Downloads\Reproductor-master\Reproductor\Reproductor" File="Form1.cs" Line="169">El método 'Form1.InitializeComponent()' pasa una cadena literal como parámetro 'value' de una llamada a 'Control.Text.set(string)'. En su lugar, recupere las siguientes cadenas de una tabla de recursos: "statusBar1".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\david\Downloads\Reproductor-master\Reproductor\Reproductor" File="Form1.cs" Line="207">El método 'Form1.InitializeComponent()' pasa una cadena literal como parámetro 'value' de una llamada a 'Control.Text.set(string)'. En su lugar, recupere las siguientes cadenas de una tabla de recursos: "statusBar2".</Issue>
+            </Message>
+            <Message Id="System.Windows.Forms.StatusBarPanel.set_Name(System.String)" TypeName="No pasar cadenas literal como parámetros localizados" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2017-01-13 22:47:10Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\david\Downloads\Reproductor-master\Reproductor\Reproductor" File="Form1.cs" Line="174">El método 'Form1.InitializeComponent()' pasa una cadena literal como parámetro 'value' de una llamada a 'StatusBarPanel.Name.set(string)'. En su lugar, recupere las siguientes cadenas de una tabla de recursos: "statusBarPanel1".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\david\Downloads\Reproductor-master\Reproductor\Reproductor" File="Form1.cs" Line="212">El método 'Form1.InitializeComponent()' pasa una cadena literal como parámetro 'value' de una llamada a 'StatusBarPanel.Name.set(string)'. En su lugar, recupere las siguientes cadenas de una tabla de recursos: "statusBarPanel2".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\david\Downloads\Reproductor-master\Reproductor\Reproductor" File="Form1.cs" Line="219">El método 'Form1.InitializeComponent()' pasa una cadena literal como parámetro 'value' de una llamada a 'StatusBarPanel.Name.set(string)'. En su lugar, recupere las siguientes cadenas de una tabla de recursos: "statusBarPanel3".</Issue>
+            </Message>
+            <Message Id="System.Windows.Forms.StatusBarPanel.set_Text(System.String)" TypeName="No pasar cadenas literal como parámetros localizados" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2017-01-13 22:47:10Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\david\Downloads\Reproductor-master\Reproductor\Reproductor" File="Form1.cs" Line="213">El método 'Form1.InitializeComponent()' pasa una cadena literal como parámetro 'value' de una llamada a 'StatusBarPanel.Text.set(string)'. En su lugar, recupere las siguientes cadenas de una tabla de recursos: "Tiempo Total:".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\david\Downloads\Reproductor-master\Reproductor\Reproductor" File="Form1.cs" Line="220">El método 'Form1.InitializeComponent()' pasa una cadena literal como parámetro 'value' de una llamada a 'StatusBarPanel.Text.set(string)'. En su lugar, recupere las siguientes cadenas de una tabla de recursos: "Tiempo Transcurrido".</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#linkLabel1_LinkClicked(System.Object,System.Windows.Forms.LinkLabelLinkClickedEventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.Windows.Forms.FileDialog.set_Filter(System.String)" TypeName="No pasar cadenas literal como parámetros localizados" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2017-01-13 22:47:10Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\david\Downloads\Reproductor-master\Reproductor\Reproductor" File="Form1.cs" Line="475">El método 'Form1.linkLabel1_LinkClicked(object, LinkLabelLinkClickedEventArgs)' pasa una cadena literal como parámetro 'value' de una llamada a 'FileDialog.Filter.set(string)'. En su lugar, recupere las siguientes cadenas de una tabla de recursos: "Archivos de mp3 (*.mp3) | *.mp3|Audio Files (.wav)|*.wav".</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#timer1_Tick(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.Windows.Forms.StatusBarPanel.set_Text(System.String)" TypeName="No pasar cadenas literal como parámetros localizados" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2017-01-13 22:47:10Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\david\Downloads\Reproductor-master\Reproductor\Reproductor" File="Form1.cs" Line="450">El método 'Form1.timer1_Tick(object, EventArgs)' pasa una cadena literal como parámetro 'value' de una llamada a 'StatusBarPanel.Text.set(string)'. En su lugar, recupere las siguientes cadenas de una tabla de recursos: "Estado del Reproductor: ".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\david\Downloads\Reproductor-master\Reproductor\Reproductor" File="Form1.cs" Line="448">El método 'Form1.timer1_Tick(object, EventArgs)' pasa una cadena literal como parámetro 'value' de una llamada a 'StatusBarPanel.Text.set(string)'. En su lugar, recupere las siguientes cadenas de una tabla de recursos: "Tiempo Total: ".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\david\Downloads\Reproductor-master\Reproductor\Reproductor" File="Form1.cs" Line="449">El método 'Form1.timer1_Tick(object, EventArgs)' pasa una cadena literal como parámetro 'value' de una llamada a 'StatusBarPanel.Text.set(string)'. En su lugar, recupere las siguientes cadenas de una tabla de recursos: "Tiempo Tracurrido: ".</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Reproductor" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#CalcularPosicion()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="ReproductorMp3.Reproductor.mciSendString(System.String,System.Text.StringBuilder,System.Int32,System.Int32)" TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806" Status="Active" Created="2017-01-13 22:47:10Z" FixCategory="NonBreaking">
+             <Issue Name="HResultOrErrorCode" Certainty="95" Level="Warning" Path="c:\Users\david\Downloads\Reproductor-master\Reproductor\Reproductor" File="Reproductor.cs" Line="380">'Reproductor.CalcularPosicion()' llama a 'Reproductor.mciSendString(string, StringBuilder, int, int)' pero no usa el elemento HRESULT o el código de error que devuelve el método. Esto puede dar lugar a un comportamiento inesperado en condiciones de error o situaciones de pocos recursos. Use el resultado en una instrucción condicional, asigne el resultado a una variable o páselo como un argumento a otro método.</Issue>
+             <Issue Name="HResultOrErrorCode" Certainty="95" Level="Warning" Path="c:\Users\david\Downloads\Reproductor-master\Reproductor\Reproductor" File="Reproductor.cs" Line="382">'Reproductor.CalcularPosicion()' llama a 'Reproductor.mciSendString(string, StringBuilder, int, int)' pero no usa el elemento HRESULT o el código de error que devuelve el método. Esto puede dar lugar a un comportamiento inesperado en condiciones de error o situaciones de pocos recursos. Use el resultado en una instrucción condicional, asigne el resultado a una variable o páselo como un argumento a otro método.</Issue>
+            </Message>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2017-01-13 22:47:10Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="c:\Users\david\Downloads\Reproductor-master\Reproductor\Reproductor" File="Reproductor.cs" Line="377">El parámetro 'this' (o 'Me' en Visual Basic) de 'Reproductor.CalcularPosicion()' no se usa nunca. Marque el miembro como static (o Shared en Visual Basic) o use 'this'/'Me' en el cuerpo del método o al menos un descriptor de acceso de la propiedad, si procede.</Issue>
+            </Message>
+            <Message Id="System.Int64.Parse(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2017-01-13 22:47:10Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="c:\Users\david\Downloads\Reproductor-master\Reproductor\Reproductor" File="Reproductor.cs" Line="388">Puesto que el comportamiento de 'long.Parse(string)' podría variar en función de la configuración regional del usuario actual, reemplace esta llamada en 'Reproductor.CalcularPosicion()' por una llamada a 'long.Parse(string, IFormatProvider)'. Si el resultado de 'long.Parse(string, IFormatProvider)' estará basado en los datos proporcionados por el usuario, especifique 'CultureInfo.CurrentCulture' como parámetro 'IFormatProvider'. De lo contrario, si el resultado estará basado en datos almacenados a los que tiene acceso el software, como cuando se cargan desde un disco o una base de datos, especifique 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message TypeName="TestForEmptyStringsUsingStringLength" Category="Microsoft.Performance" CheckId="CA1820" Status="Active" Created="2017-01-13 22:47:10Z" FixCategory="NonBreaking">
+             <Issue Name="IsNullOrEmpty" Certainty="95" Level="Warning" Path="c:\Users\david\Downloads\Reproductor-master\Reproductor\Reproductor" File="Reproductor.cs" Line="385">Reemplace la llamada a 'string.operator !=(string, string)' en 'Reproductor.CalcularPosicion()' con una llamada a 'String.IsNullOrEmpty'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CalcularTamaño()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="ReproductorMp3.Reproductor.mciSendString(System.String,System.Text.StringBuilder,System.Int32,System.Int32)" TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806" Status="Active" Created="2017-01-13 22:47:10Z" FixCategory="NonBreaking">
+             <Issue Name="HResultOrErrorCode" Certainty="95" Level="Warning" Path="c:\Users\david\Downloads\Reproductor-master\Reproductor\Reproductor" File="Reproductor.cs" Line="429">'Reproductor.CalcularTamaño()' llama a 'Reproductor.mciSendString(string, StringBuilder, int, int)' pero no usa el elemento HRESULT o el código de error que devuelve el método. Esto puede dar lugar a un comportamiento inesperado en condiciones de error o situaciones de pocos recursos. Use el resultado en una instrucción condicional, asigne el resultado a una variable o páselo como un argumento a otro método.</Issue>
+             <Issue Name="HResultOrErrorCode" Certainty="95" Level="Warning" Path="c:\Users\david\Downloads\Reproductor-master\Reproductor\Reproductor" File="Reproductor.cs" Line="431">'Reproductor.CalcularTamaño()' llama a 'Reproductor.mciSendString(string, StringBuilder, int, int)' pero no usa el elemento HRESULT o el código de error que devuelve el método. Esto puede dar lugar a un comportamiento inesperado en condiciones de error o situaciones de pocos recursos. Use el resultado en una instrucción condicional, asigne el resultado a una variable o páselo como un argumento a otro método.</Issue>
+            </Message>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2017-01-13 22:47:10Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="c:\Users\david\Downloads\Reproductor-master\Reproductor\Reproductor" File="Reproductor.cs" Line="427">El parámetro 'this' (o 'Me' en Visual Basic) de 'Reproductor.CalcularTamaño()' no se usa nunca. Marque el miembro como static (o Shared en Visual Basic) o use 'this'/'Me' en el cuerpo del método o al menos un descriptor de acceso de la propiedad, si procede.</Issue>
+            </Message>
+            <Message Id="System.Int64.Parse(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2017-01-13 22:47:10Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="c:\Users\david\Downloads\Reproductor-master\Reproductor\Reproductor" File="Reproductor.cs" Line="436">Puesto que el comportamiento de 'long.Parse(string)' podría variar en función de la configuración regional del usuario actual, reemplace esta llamada en 'Reproductor.CalcularTamaño()' por una llamada a 'long.Parse(string, IFormatProvider)'. Si el resultado de 'long.Parse(string, IFormatProvider)' estará basado en los datos proporcionados por el usuario, especifique 'CultureInfo.CurrentCulture' como parámetro 'IFormatProvider'. De lo contrario, si el resultado estará basado en datos almacenados a los que tiene acceso el software, como cuando se cargan desde un disco o una base de datos, especifique 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message TypeName="TestForEmptyStringsUsingStringLength" Category="Microsoft.Performance" CheckId="CA1820" Status="Active" Created="2017-01-13 22:47:10Z" FixCategory="NonBreaking">
+             <Issue Name="IsNullOrEmpty" Certainty="95" Level="Warning" Path="c:\Users\david\Downloads\Reproductor-master\Reproductor\Reproductor" File="Reproductor.cs" Line="434">Reemplace la llamada a 'string.operator !=(string, string)' en 'Reproductor.CalcularTamaño()' con una llamada a 'String.IsNullOrEmpty'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Cerrar()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="ReproductorMp3.Reproductor.mciSendString(System.String,System.Text.StringBuilder,System.Int32,System.Int32)" TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806" Status="Active" Created="2017-01-13 22:47:10Z" FixCategory="NonBreaking">
+             <Issue Name="HResultOrErrorCode" Certainty="95" Level="Warning" Path="c:\Users\david\Downloads\Reproductor-master\Reproductor\Reproductor" File="Reproductor.cs" Line="309">'Reproductor.Cerrar()' llama a 'Reproductor.mciSendString(string, StringBuilder, int, int)' pero no usa el elemento HRESULT o el código de error que devuelve el método. Esto puede dar lugar a un comportamiento inesperado en condiciones de error o situaciones de pocos recursos. Use el resultado en una instrucción condicional, asigne el resultado a una variable o páselo como un argumento a otro método.</Issue>
+             <Issue Name="HResultOrErrorCode" Certainty="95" Level="Warning" Path="c:\Users\david\Downloads\Reproductor-master\Reproductor\Reproductor" File="Reproductor.cs" Line="310">'Reproductor.Cerrar()' llama a 'Reproductor.mciSendString(string, StringBuilder, int, int)' pero no usa el elemento HRESULT o el código de error que devuelve el método. Esto puede dar lugar a un comportamiento inesperado en condiciones de error o situaciones de pocos recursos. Use el resultado en una instrucción condicional, asigne el resultado a una variable o páselo como un argumento a otro método.</Issue>
+            </Message>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2017-01-13 22:47:10Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="c:\Users\david\Downloads\Reproductor-master\Reproductor\Reproductor" File="Reproductor.cs" Line="307">El parámetro 'this' (o 'Me' en Visual Basic) de 'Reproductor.Cerrar()' no se usa nunca. Marque el miembro como static (o Shared en Visual Basic) o use 'this'/'Me' en el cuerpo del método o al menos un descriptor de acceso de la propiedad, si procede.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Detener()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="ReproductorMp3.Reproductor.mciSendString(System.String,System.Text.StringBuilder,System.Int32,System.Int32)" TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806" Status="Active" Created="2017-01-13 22:47:10Z" FixCategory="NonBreaking">
+             <Issue Name="HResultOrErrorCode" Certainty="95" Level="Warning" Path="c:\Users\david\Downloads\Reproductor-master\Reproductor\Reproductor" File="Reproductor.cs" Line="319">'Reproductor.Detener()' llama a 'Reproductor.mciSendString(string, StringBuilder, int, int)' pero no usa el elemento HRESULT o el código de error que devuelve el método. Esto puede dar lugar a un comportamiento inesperado en condiciones de error o situaciones de pocos recursos. Use el resultado en una instrucción condicional, asigne el resultado a una variable o páselo como un argumento a otro método.</Issue>
+            </Message>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2017-01-13 22:47:10Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="c:\Users\david\Downloads\Reproductor-master\Reproductor\Reproductor" File="Reproductor.cs" Line="317">El parámetro 'this' (o 'Me' en Visual Basic) de 'Reproductor.Detener()' no se usa nunca. Marque el miembro como static (o Shared en Visual Basic) o use 'this'/'Me' en el cuerpo del método o al menos un descriptor de acceso de la propiedad, si procede.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DispositivosDeSonido()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="De" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2017-01-13 22:47:10Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="c:\Users\david\Downloads\Reproductor-master\Reproductor\Reproductor" File="Reproductor.cs" Line="146">Corrija el uso de mayúsculas y minúsculas en 'De' en el nombre del miembro 'Reproductor.DispositivosDeSonido()' cambiándolo a 'DE'.</Issue>
+            </Message>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2017-01-13 22:47:10Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="c:\Users\david\Downloads\Reproductor-master\Reproductor\Reproductor" File="Reproductor.cs" Line="146">El parámetro 'this' (o 'Me' en Visual Basic) de 'Reproductor.DispositivosDeSonido()' no se usa nunca. Marque el miembro como static (o Shared en Visual Basic) o use 'this'/'Me' en el cuerpo del método o al menos un descriptor de acceso de la propiedad, si procede.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Estado()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="ReproductorMp3.Reproductor.mciSendString(System.String,System.Text.StringBuilder,System.Int32,System.Int32)" TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806" Status="Active" Created="2017-01-13 22:47:10Z" FixCategory="NonBreaking">
+             <Issue Name="HResultOrErrorCode" Certainty="95" Level="Warning" Path="c:\Users\david\Downloads\Reproductor-master\Reproductor\Reproductor" File="Reproductor.cs" Line="330">'Reproductor.Estado()' llama a 'Reproductor.mciSendString(string, StringBuilder, int, int)' pero no usa el elemento HRESULT o el código de error que devuelve el método. Esto puede dar lugar a un comportamiento inesperado en condiciones de error o situaciones de pocos recursos. Use el resultado en una instrucción condicional, asigne el resultado a una variable o páselo como un argumento a otro método.</Issue>
+            </Message>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2017-01-13 22:47:10Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="c:\Users\david\Downloads\Reproductor-master\Reproductor\Reproductor" File="Reproductor.cs" Line="327">El parámetro 'this' (o 'Me' en Visual Basic) de 'Reproductor.Estado()' no se usa nunca. Marque el miembro como static (o Shared en Visual Basic) o use 'this'/'Me' en el cuerpo del método o al menos un descriptor de acceso de la propiedad, si procede.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetLongPathName(System.String,System.Text.StringBuilder,System.Int32)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="long" TypeName="IdentifiersShouldNotContainTypeNames" Category="Microsoft.Naming" CheckId="CA1720" Status="Active" Created="2017-01-13 22:47:10Z" FixCategory="Breaking">
+             <Issue Name="LanguageSpecificMember" Certainty="75" Level="Error">Considere reemplazar el identificador del tipo de datos específico del lenguaje 'Long' en el nombre del miembro 'Reproductor.GetLongPathName(string, StringBuilder, int)' por un equivalente independiente del lenguaje o un término más genérico, como 'value'.</Issue>
+            </Message>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2017-01-13 22:47:10Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Puesto que es un método P/Invoke, se debe definir 'Reproductor.GetLongPathName(string, StringBuilder, int)' en una clase con el nombre NativeMethods, SafeNativeMethods o UnsafeNativeMethods.</Issue>
+            </Message>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2017-01-13 22:47:10Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">Cambie la accesibilidad del elemento P/Invoke 'Reproductor.GetLongPathName(string, StringBuilder, int)' para que no esté visible desde fuera del ensamblado.</Issue>
+            </Message>
+            <Message Id="0" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2017-01-13 22:47:10Z" FixCategory="NonBreaking">
+             <Issue Name="ParameterImplicitAnsi" Certainty="75" Level="Error">Para reducir el riesgo de la seguridad, calcule las referencias del parámetro 'lpszShortPath' como Unicode, estableciendo DllImport.CharSet en CharSet.Unicode, o bien calculando las referencias del parámetro de forma explícita como UnmanagedType.LPWStr. Si necesita calcular las referencias de esta cadena como ANSI o dependiente del sistema, especifique MarshalAs de forma explícita y establezca BestFitMapping=false. Para mayor seguridad, establezca también ThrowOnUnmappableChar=true.</Issue>
+            </Message>
+            <Message Id="1" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2017-01-13 22:47:10Z" FixCategory="NonBreaking">
+             <Issue Name="ParameterImplicitAnsi" Certainty="75" Level="Error">Para reducir el riesgo de la seguridad, calcule las referencias del parámetro 'lpszLongPath' como Unicode, estableciendo DllImport.CharSet en CharSet.Unicode, o bien calculando las referencias del parámetro de forma explícita como UnmanagedType.LPWStr. Si necesita calcular las referencias de esta cadena como ANSI o dependiente del sistema, especifique MarshalAs de forma explícita y establezca BestFitMapping=false. Para mayor seguridad, establezca también ThrowOnUnmappableChar=true.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetShortPathName(System.String,System.Text.StringBuilder,System.Int32)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="short" TypeName="IdentifiersShouldNotContainTypeNames" Category="Microsoft.Naming" CheckId="CA1720" Status="Active" Created="2017-01-13 22:47:10Z" FixCategory="Breaking">
+             <Issue Name="LanguageSpecificMember" Certainty="75" Level="Error">Considere reemplazar el identificador del tipo de datos específico del lenguaje 'Short' en el nombre del miembro 'Reproductor.GetShortPathName(string, StringBuilder, int)' por un equivalente independiente del lenguaje o un término más genérico, como 'value'.</Issue>
+            </Message>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2017-01-13 22:47:10Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Puesto que es un método P/Invoke, se debe definir 'Reproductor.GetShortPathName(string, StringBuilder, int)' en una clase con el nombre NativeMethods, SafeNativeMethods o UnsafeNativeMethods.</Issue>
+            </Message>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2017-01-13 22:47:10Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">Cambie la accesibilidad del elemento P/Invoke 'Reproductor.GetShortPathName(string, StringBuilder, int)' para que no esté visible desde fuera del ensamblado.</Issue>
+            </Message>
+            <Message Id="0" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2017-01-13 22:47:10Z" FixCategory="NonBreaking">
+             <Issue Name="ParameterImplicitAnsi" Certainty="75" Level="Error">Para reducir el riesgo de la seguridad, calcule las referencias del parámetro 'lpszLongPath' como Unicode, estableciendo DllImport.CharSet en CharSet.Unicode, o bien calculando las referencias del parámetro de forma explícita como UnmanagedType.LPWStr. Si necesita calcular las referencias de esta cadena como ANSI o dependiente del sistema, especifique MarshalAs de forma explícita y establezca BestFitMapping=false. Para mayor seguridad, establezca también ThrowOnUnmappableChar=true.</Issue>
+            </Message>
+            <Message Id="1" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2017-01-13 22:47:10Z" FixCategory="NonBreaking">
+             <Issue Name="ParameterImplicitAnsi" Certainty="75" Level="Error">Para reducir el riesgo de la seguridad, calcule las referencias del parámetro 'lpszShortPath' como Unicode, estableciendo DllImport.CharSet en CharSet.Unicode, o bien calculando las referencias del parámetro de forma explícita como UnmanagedType.LPWStr. Si necesita calcular las referencias de esta cadena como ANSI o dependiente del sistema, especifique MarshalAs de forma explícita y establezca BestFitMapping=false. Para mayor seguridad, establezca también ThrowOnUnmappableChar=true.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#mciGetErrorString(System.Int32,System.Text.StringBuilder,System.Int32)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="mci" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2017-01-13 22:47:10Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Corrija el uso de mayúsculas y minúsculas en 'mci' en el nombre del miembro 'Reproductor.mciGetErrorString(int, StringBuilder, int)' cambiándolo a 'Mci'.</Issue>
+            </Message>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2017-01-13 22:47:10Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Puesto que es un método P/Invoke, se debe definir 'Reproductor.mciGetErrorString(int, StringBuilder, int)' en una clase con el nombre NativeMethods, SafeNativeMethods o UnsafeNativeMethods.</Issue>
+            </Message>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2017-01-13 22:47:10Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">Cambie la accesibilidad del elemento P/Invoke 'Reproductor.mciGetErrorString(int, StringBuilder, int)' para que no esté visible desde fuera del ensamblado.</Issue>
+            </Message>
+            <Message Id="1" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2017-01-13 22:47:10Z" FixCategory="NonBreaking">
+             <Issue Name="ParameterImplicitAnsi" Certainty="75" Level="Error">Para reducir el riesgo de la seguridad, calcule las referencias del parámetro 'lpszErrorText' como Unicode, estableciendo DllImport.CharSet en CharSet.Unicode, o bien calculando las referencias del parámetro de forma explícita como UnmanagedType.LPWStr. Si necesita calcular las referencias de esta cadena como ANSI o dependiente del sistema, especifique MarshalAs de forma explícita y establezca BestFitMapping=false. Para mayor seguridad, establezca también ThrowOnUnmappableChar=true.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#MciMensajesDeError(System.Int32)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2017-01-13 22:47:10Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="c:\Users\david\Downloads\Reproductor-master\Reproductor\Reproductor" File="Reproductor.cs" Line="127">El parámetro 'this' (o 'Me' en Visual Basic) de 'Reproductor.MciMensajesDeError(int)' no se usa nunca. Marque el miembro como static (o Shared en Visual Basic) o use 'this'/'Me' en el cuerpo del método o al menos un descriptor de acceso de la propiedad, si procede.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#mciSendString(System.String,System.Text.StringBuilder,System.Int32,System.Int32)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="mci" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2017-01-13 22:47:10Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Corrija el uso de mayúsculas y minúsculas en 'mci' en el nombre del miembro 'Reproductor.mciSendString(string, StringBuilder, int, int)' cambiándolo a 'Mci'.</Issue>
+            </Message>
+            <Message Id="string" TypeName="IdentifiersShouldNotContainTypeNames" Category="Microsoft.Naming" CheckId="CA1720" Status="Active" Created="2017-01-13 22:47:10Z" FixCategory="Breaking">
+             <Issue Name="LanguageIndependentMemberParameter" Certainty="75" Level="Error">En el miembro 'Reproductor.mciSendString(string, StringBuilder, int, int)', considere reemplazar el identificador del tipo de datos 'String' en el nombre del parámetro 'lpstrReturnString' por un término más genérico, como 'value'.</Issue>
+            </Message>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2017-01-13 22:47:10Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Puesto que es un método P/Invoke, se debe definir 'Reproductor.mciSendString(string, StringBuilder, int, int)' en una clase con el nombre NativeMethods, SafeNativeMethods o UnsafeNativeMethods.</Issue>
+            </Message>
+            <Message Id="3" TypeName="PInvokeDeclarationsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1901" Status="Active" Created="2017-01-13 22:47:10Z" FixCategory="Breaking">
+             <Issue Name="Parameter" Certainty="95" Level="Error">Como se declara en el código, el parámetro 'hwndCallback' del elemento P/Invoke 'Reproductor.mciSendString(string, StringBuilder, int, int)' será de 4 bytes en plataformas 64 bits. Esto no es correcto, puesto que la declaración nativa actual de esta API indica que debería ser de 8 bytes en plataformas 64 bits. Consulte la documentación de Platform SDK de MSDN para obtener ayuda para determinar qué tipo de datos debería usarse en lugar de 'int'.</Issue>
+            </Message>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2017-01-13 22:47:10Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">Cambie la accesibilidad del elemento P/Invoke 'Reproductor.mciSendString(string, StringBuilder, int, int)' para que no esté visible desde fuera del ensamblado.</Issue>
+            </Message>
+            <Message Id="0" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2017-01-13 22:47:10Z" FixCategory="NonBreaking">
+             <Issue Name="ParameterImplicitAnsi" Certainty="75" Level="Error">Para reducir el riesgo de la seguridad, calcule las referencias del parámetro 'lpstrCommand' como Unicode, estableciendo DllImport.CharSet en CharSet.Unicode, o bien calculando las referencias del parámetro de forma explícita como UnmanagedType.LPWStr. Si necesita calcular las referencias de esta cadena como ANSI o dependiente del sistema, especifique MarshalAs de forma explícita y establezca BestFitMapping=false. Para mayor seguridad, establezca también ThrowOnUnmappableChar=true.</Issue>
+            </Message>
+            <Message Id="1" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2017-01-13 22:47:10Z" FixCategory="NonBreaking">
+             <Issue Name="ParameterImplicitAnsi" Certainty="75" Level="Error">Para reducir el riesgo de la seguridad, calcule las referencias del parámetro 'lpstrReturnString' como Unicode, estableciendo DllImport.CharSet en CharSet.Unicode, o bien calculando las referencias del parámetro de forma explícita como UnmanagedType.LPWStr. Si necesita calcular las referencias de esta cadena como ANSI o dependiente del sistema, especifique MarshalAs de forma explícita y establezca BestFitMapping=false. Para mayor seguridad, establezca también ThrowOnUnmappableChar=true.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#NombreCorto(System.String)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2017-01-13 22:47:10Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="c:\Users\david\Downloads\Reproductor-master\Reproductor\Reproductor" File="Reproductor.cs" Line="93">El parámetro 'this' (o 'Me' en Visual Basic) de 'Reproductor.NombreCorto(string)' no se usa nunca. Marque el miembro como static (o Shared en Visual Basic) o use 'this'/'Me' en el cuerpo del método o al menos un descriptor de acceso de la propiedad, si procede.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#NombreDeArchivo" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="De" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2017-01-13 22:47:10Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="c:\Users\david\Downloads\Reproductor-master\Reproductor\Reproductor" File="Reproductor.cs" Line="76">Corrija el uso de mayúsculas y minúsculas en 'De' en el nombre del miembro 'Reproductor.NombreDeArchivo' cambiándolo a 'DE'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#NombreLargo(System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Nombre" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2017-01-13 22:47:10Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="c:\Users\david\Downloads\Reproductor-master\Reproductor\Reproductor" File="Reproductor.cs" Line="111">En el miembro 'Reproductor.NombreLargo(string)', corrija el uso de mayúsculas y minúsculas en 'Nombre' en el nombre del parámetro 'NombreCorto' cambiándolo a 'nombre'.</Issue>
+            </Message>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2017-01-13 22:47:10Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="c:\Users\david\Downloads\Reproductor-master\Reproductor\Reproductor" File="Reproductor.cs" Line="111">El parámetro 'this' (o 'Me' en Visual Basic) de 'Reproductor.NombreLargo(string)' no se usa nunca. Marque el miembro como static (o Shared en Visual Basic) o use 'this'/'Me' en el cuerpo del método o al menos un descriptor de acceso de la propiedad, si procede.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Posicion()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.String.Format(System.String,System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2017-01-13 22:47:10Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="c:\Users\david\Downloads\Reproductor-master\Reproductor\Reproductor" File="Reproductor.cs" Line="406">Puesto que el comportamiento de 'string.Format(string, object)' podría variar en función de la configuración regional del usuario actual, reemplace esta llamada en 'Reproductor.Posicion()' por una llamada a 'string.Format(IFormatProvider, string, params object[])'. Si el resultado de 'string.Format(IFormatProvider, string, params object[])' se mostrará al usuario, especifique 'CultureInfo.CurrentCulture' como parámetro 'IFormatProvider'. De lo contrario, si el resultado se almacenará y será el software quien tenga acceso a él, como cuando se almacena en un disco o en una base de datos, especifique 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="c:\Users\david\Downloads\Reproductor-master\Reproductor\Reproductor" File="Reproductor.cs" Line="415">Puesto que el comportamiento de 'string.Format(string, object)' podría variar en función de la configuración regional del usuario actual, reemplace esta llamada en 'Reproductor.Posicion()' por una llamada a 'string.Format(IFormatProvider, string, params object[])'. Si el resultado de 'string.Format(IFormatProvider, string, params object[])' se mostrará al usuario, especifique 'CultureInfo.CurrentCulture' como parámetro 'IFormatProvider'. De lo contrario, si el resultado se almacenará y será el software quien tenga acceso a él, como cuando se almacena en un disco o en una base de datos, especifique 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="c:\Users\david\Downloads\Reproductor-master\Reproductor\Reproductor" File="Reproductor.cs" Line="415">Puesto que el comportamiento de 'string.Format(string, object)' podría variar en función de la configuración regional del usuario actual, reemplace esta llamada en 'Reproductor.Posicion()' por una llamada a 'string.Format(IFormatProvider, string, params object[])'. Si el resultado de 'string.Format(IFormatProvider, string, params object[])' se mostrará al usuario, especifique 'CultureInfo.CurrentCulture' como parámetro 'IFormatProvider'. De lo contrario, si el resultado se almacenará y será el software quien tenga acceso a él, como cuando se almacena en un disco o en una base de datos, especifique 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Reposicionar(System.Int32)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Nueva" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2017-01-13 22:47:10Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="c:\Users\david\Downloads\Reproductor-master\Reproductor\Reproductor" File="Reproductor.cs" Line="236">En el miembro 'Reproductor.Reposicionar(int)', corrija el uso de mayúsculas y minúsculas en 'Nueva' en el nombre del parámetro 'NuevaPosicion' cambiándolo a 'nueva'.</Issue>
+            </Message>
+            <Message Id="NuevaPosicion*1000" TypeName="OperationsShouldNotOverflow" Category="Microsoft.Usage" CheckId="CA2233" Status="Active" Created="2017-01-13 22:47:10Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="CriticalWarning" Path="c:\Users\david\Downloads\Reproductor-master\Reproductor\Reproductor" File="Reproductor.cs" Line="240">Corrija el desbordamiento potencial en la operación 'NuevaPosicion*1000' en 'Reproductor.Reposicionar(int)'.</Issue>
+            </Message>
+            <Message Id="System.Int32.ToString" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2017-01-13 22:47:10Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="c:\Users\david\Downloads\Reproductor-master\Reproductor\Reproductor" File="Reproductor.cs" Line="240">Puesto que el comportamiento de 'int.ToString()' podría variar en función de la configuración regional del usuario actual, reemplace esta llamada en 'Reproductor.Reposicionar(int)' por una llamada a 'int.ToString(IFormatProvider)'. Si el resultado de 'int.ToString(IFormatProvider)' se mostrará al usuario, especifique 'CultureInfo.CurrentCulture' como parámetro 'IFormatProvider'. De lo contrario, si el resultado se almacenará y será el software quien tenga acceso a él, como cuando se almacena en un disco o en una base de datos, especifique 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="c:\Users\david\Downloads\Reproductor-master\Reproductor\Reproductor" File="Reproductor.cs" Line="243">Puesto que el comportamiento de 'int.ToString()' podría variar en función de la configuración regional del usuario actual, reemplace esta llamada en 'Reproductor.Reposicionar(int)' por una llamada a 'int.ToString(IFormatProvider)'. Si el resultado de 'int.ToString(IFormatProvider)' se mostrará al usuario, especifique 'CultureInfo.CurrentCulture' como parámetro 'IFormatProvider'. De lo contrario, si el resultado se almacenará y será el software quien tenga acceso a él, como cuando se almacena en un disco o en una base de datos, especifique 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Reproducir()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="TestForEmptyStringsUsingStringLength" Category="Microsoft.Performance" CheckId="CA1820" Status="Active" Created="2017-01-13 22:47:10Z" FixCategory="NonBreaking">
+             <Issue Name="IsNullOrEmpty" Certainty="95" Level="Warning" Path="c:\Users\david\Downloads\Reproductor-master\Reproductor\Reproductor" File="Reproductor.cs" Line="179">Reemplace la llamada a 'string.operator !=(string, string)' en 'Reproductor.Reproducir()' con una llamada a 'String.IsNullOrEmpty'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ReproducirDesde(System.Int64)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Desde" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2017-01-13 22:47:10Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="c:\Users\david\Downloads\Reproductor-master\Reproductor\Reproductor" File="Reproductor.cs" Line="204">En el miembro 'Reproductor.ReproducirDesde(long)', corrija el uso de mayúsculas y minúsculas en 'Desde' en el nombre del parámetro 'Desde' cambiándolo a 'desde'.</Issue>
+            </Message>
+            <Message Id="System.Int64.ToString" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2017-01-13 22:47:10Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="c:\Users\david\Downloads\Reproductor-master\Reproductor\Reproductor" File="Reproductor.cs" Line="205">Puesto que el comportamiento de 'long.ToString()' podría variar en función de la configuración regional del usuario actual, reemplace esta llamada en 'Reproductor.ReproducirDesde(long)' por una llamada a 'long.ToString(IFormatProvider)'. Si el resultado de 'long.ToString(IFormatProvider)' se mostrará al usuario, especifique 'CultureInfo.CurrentCulture' como parámetro 'IFormatProvider'. De lo contrario, si el resultado se almacenará y será el software quien tenga acceso a él, como cuando se almacena en un disco o en una base de datos, especifique 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="c:\Users\david\Downloads\Reproductor-master\Reproductor\Reproductor" File="Reproductor.cs" Line="208">Puesto que el comportamiento de 'long.ToString()' podría variar en función de la configuración regional del usuario actual, reemplace esta llamada en 'Reproductor.ReproducirDesde(long)' por una llamada a 'long.ToString(IFormatProvider)'. Si el resultado de 'long.ToString(IFormatProvider)' se mostrará al usuario, especifique 'CultureInfo.CurrentCulture' como parámetro 'IFormatProvider'. De lo contrario, si el resultado se almacenará y será el software quien tenga acceso a él, como cuando se almacena en un disco o en una base de datos, especifique 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Tamaño()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.String.Format(System.String,System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2017-01-13 22:47:10Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="c:\Users\david\Downloads\Reproductor-master\Reproductor\Reproductor" File="Reproductor.cs" Line="453">Puesto que el comportamiento de 'string.Format(string, object)' podría variar en función de la configuración regional del usuario actual, reemplace esta llamada en 'Reproductor.Tamaño()' por una llamada a 'string.Format(IFormatProvider, string, params object[])'. Si el resultado de 'string.Format(IFormatProvider, string, params object[])' se mostrará al usuario, especifique 'CultureInfo.CurrentCulture' como parámetro 'IFormatProvider'. De lo contrario, si el resultado se almacenará y será el software quien tenga acceso a él, como cuando se almacena en un disco o en una base de datos, especifique 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="c:\Users\david\Downloads\Reproductor-master\Reproductor\Reproductor" File="Reproductor.cs" Line="460">Puesto que el comportamiento de 'string.Format(string, object)' podría variar en función de la configuración regional del usuario actual, reemplace esta llamada en 'Reproductor.Tamaño()' por una llamada a 'string.Format(IFormatProvider, string, params object[])'. Si el resultado de 'string.Format(IFormatProvider, string, params object[])' se mostrará al usuario, especifique 'CultureInfo.CurrentCulture' como parámetro 'IFormatProvider'. De lo contrario, si el resultado se almacenará y será el software quien tenga acceso a él, como cuando se almacena en un disco o en una base de datos, especifique 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="c:\Users\david\Downloads\Reproductor-master\Reproductor\Reproductor" File="Reproductor.cs" Line="460">Puesto que el comportamiento de 'string.Format(string, object)' podría variar en función de la configuración regional del usuario actual, reemplace esta llamada en 'Reproductor.Tamaño()' por una llamada a 'string.Format(IFormatProvider, string, params object[])'. Si el resultado de 'string.Format(IFormatProvider, string, params object[])' se mostrará al usuario, especifique 'CultureInfo.CurrentCulture' como parámetro 'IFormatProvider'. De lo contrario, si el resultado se almacenará y será el software quien tenga acceso a él, como cuando se almacena en un disco o en una base de datos, especifique 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Velocidad(System.Int32)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Tramas" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2017-01-13 22:47:10Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="c:\Users\david\Downloads\Reproductor-master\Reproductor\Reproductor" File="Reproductor.cs" Line="218">En el miembro 'Reproductor.Velocidad(int)', corrija el uso de mayúsculas y minúsculas en 'Tramas' en el nombre del parámetro 'Tramas' cambiándolo a 'tramas'.</Issue>
+            </Message>
+            <Message Id="System.Int32.ToString" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2017-01-13 22:47:10Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="c:\Users\david\Downloads\Reproductor-master\Reproductor\Reproductor" File="Reproductor.cs" Line="222">Puesto que el comportamiento de 'int.ToString()' podría variar en función de la configuración regional del usuario actual, reemplace esta llamada en 'Reproductor.Velocidad(int)' por una llamada a 'int.ToString(IFormatProvider)'. Si el resultado de 'int.ToString(IFormatProvider)' se mostrará al usuario, especifique 'CultureInfo.CurrentCulture' como parámetro 'IFormatProvider'. De lo contrario, si el resultado se almacenará y será el software quien tenga acceso a él, como cuando se almacena en un disco o en una base de datos, especifique 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#waveOutGetNumDevs()" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="wave" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2017-01-13 22:47:10Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Corrija el uso de mayúsculas y minúsculas en 'wave' en el nombre del miembro 'Reproductor.waveOutGetNumDevs()' cambiándolo a 'Wave'.</Issue>
+            </Message>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2017-01-13 22:47:10Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Puesto que es un método P/Invoke, se debe definir 'Reproductor.waveOutGetNumDevs()' en una clase con el nombre NativeMethods, SafeNativeMethods o UnsafeNativeMethods.</Issue>
+            </Message>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2017-01-13 22:47:10Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">Cambie la accesibilidad del elemento P/Invoke 'Reproductor.waveOutGetNumDevs()' para que no esté visible desde fuera del ensamblado.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ReproductorEstado" Kind="Event" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DeclareEventHandlersCorrectly" Category="Microsoft.Design" CheckId="CA1009" Status="Active" Created="2017-01-13 22:47:10Z" FixCategory="Breaking">
+             <Issue Name="First" Certainty="95" Level="Error">Declare el primer parámetro de 'Reproductor.ReproductorMessage' como un objeto denominado 'sender'.</Issue>
+             <Issue Name="Second" Certainty="95" Level="Error">Declare el segundo parámetro de 'Reproductor.ReproductorMessage' como EventArgs o una instancia de un tipo que extienda EventArgs, denominado 'e'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Reproductor+ReproductorMessage" Kind="Delegate" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="Msg" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2017-01-13 22:47:10Z" FixCategory="Breaking">
+           <Issue Name="DelegateParameter" Certainty="85" Level="Error">En el delegado 'Reproductor.ReproductorMessage', corrija el uso de mayúsculas y minúsculas en 'Msg' en el nombre del parámetro 'Msg' cambiándolo a 'msg'.</Issue>
+          </Message>
+          <Message TypeName="NestedTypesShouldNotBeVisible" Category="Microsoft.Design" CheckId="CA1034" Status="Active" Created="2017-01-13 22:47:10Z" FixCategory="Breaking">
+           <Issue Certainty="90" Level="Error">No anide el tipo 'Reproductor.ReproductorMessage'. Como alternativa, cambie su accesibilidad para que no esté visible externamente.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210">
+   <Name>Los ensamblados deben tener nombres seguros válidos</Name>
+   <Description>Puede que el ensamblado no tenga un nombre seguro, que no sea válido o que éste sea válido únicamente por la configuración del equipo. No se puede implementar el ensamblado en este estado. Las causas más probables son: 1) El contenido del ensamblado se modificó después de firmarlo. 2) Error en el proceso de firma. 3) El ensamblado tenía firma retardada. 4) Existía una clave del Registro que permitió que se realizara la comprobación (de lo contrario no se hubiera realizado).</Description>
+   <Resolution Name="NoStrongName">Firme {0} con una clave de nombre seguro.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182127.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="designrules.dll" Version="12.0.0.0" />
+  </Rule>
+  <Rule TypeName="DeclareEventHandlersCorrectly" Category="Microsoft.Design" CheckId="CA1009">
+   <Name>Declare los controladores de evento correctamente</Name>
+   <Description>Normalmente, los eventos .NET tienen dos parámetros que especifican el remitente del evento y los datos del mismo. Las signaturas del controlador de eventos deberían tener la siguiente forma: void MyEventHandler(object sender, EventArgs e). El parámetro 'sender' es siempre de tipo System.Object, incluso aunque fuera posible utilizar un tipo más específico. El parámetro 'e' es siempre de tipo System.EventArgs. Los eventos que no proporcionan datos del evento deberían utilizar el tipo delegado System.EventHandler. Los controladores de evento devuelven void para que puedan enviar cada evento a varios métodos de destino. Cualquier valor devuelto por el destino se perderá después de la primera llamada.</Description>
+   <Resolution Name="First">Declare el primer parámetro de {0} como un objeto denominado 'sender'.</Resolution>
+   <Resolution Name="Second">Declare el segundo parámetro de {0} como EventArgs o una instancia de un tipo que extienda EventArgs, denominado 'e'.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182133.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="designrules.dll" Version="12.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806">
+   <Name>No omitir resultados del método</Name>
+   <Description>El resultado de los métodos que devuelven nuevas instancias de cadenas debe estar asignado a una variable y usarse en consecuencia. Si el resultado de un método que crea un objeto nuevo, como String.ToLower(), no está asignado a una variable, la llamada no sirve para nada.</Description>
+   <Resolution Name="HResultOrErrorCode">{0} llama a {1} pero no usa el elemento HRESULT o el código de error que devuelve el método. Esto puede dar lugar a un comportamiento inesperado en condiciones de error o situaciones de pocos recursos. Use el resultado en una instrucción condicional, asigne el resultado a una variable o páselo como un argumento a otro método.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182273.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="usagerules.dll" Version="12.0.0.0" />
+  </Rule>
+  <Rule TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709">
+   <Name>Los identificadores deberían utilizar las mayúsculas y minúsculas correctamente</Name>
+   <Description>Los identificadores de tipo, espacio de nombres y miembro usan las mayúsculas y minúsculas como en Pascal. Los identificadores de parámetro usan las mayúsculas y minúsculas como en Camel. Los acrónimos de dos letras en estos identificadores deben ir en mayúsculas; por ejemplo, use System.IO en lugar de System.Io. Los acrónimos de tres o más letras deben usar las mayúsculas y minúsculas como en Pascal; por ejemplo, use System.Xml en lugar de System.XML. La convención de mayúsculas y minúsculas Pascal pone en mayúscula la primera letra de cada palabra, como en BackColor. La convención de mayúsculas y minúsculas Camel pone en minúscula la primera letra de la primera palabra y, en mayúscula, la primera letra de las palabras siguientes, como en backgroundColor. Si bien puede ser una práctica común para algunos acrónimos de dos letras no ponerlos totalmente en mayúsculas, no se deben excluir las infracciones de esta regla por esta razón. Por ejemplo, 'DbConnection', es común pero incorrecto; use DBConnection. Una infracción de esta regla puede ser necesaria por compatibilidad con esquemas de símbolos no administrados existentes. En general, sin embargo, estos símbolos no deberían estar visibles fuera del ensamblado que los usa.</Description>
+   <Resolution Name="Assembly">Corrija el uso de mayúsculas y minúsculas en '{0}' en el nombre del ensamblado {1} cambiándolo a '{2}'.</Resolution>
+   <Resolution Name="DelegateParameter">En el delegado {0}, corrija el uso de mayúsculas y minúsculas en '{1}' en el nombre del parámetro {2} cambiándolo a '{3}'.</Resolution>
+   <Resolution Name="Member">Corrija el uso de mayúsculas y minúsculas en '{0}' en el nombre del miembro {1} cambiándolo a '{2}'.</Resolution>
+   <Resolution Name="MemberParameter">En el miembro {0}, corrija el uso de mayúsculas y minúsculas en '{1}' en el nombre del parámetro {2} cambiándolo a '{3}'.</Resolution>
+   <Resolution Name="Namespace">Corrija el uso de mayúsculas y minúsculas en '{0}' en el nombre del espacio de nombres '{1}' cambiándolo a '{2}'.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182240.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="85">Error</MessageLevel>
+   <File Name="namingrules.dll" Version="12.0.0.0" />
+  </Rule>
+  <Rule TypeName="IdentifiersShouldNotContainTypeNames" Category="Microsoft.Naming" CheckId="CA1720">
+   <Name>Los identificadores no deben contener nombres de tipo</Name>
+   <Description>Evite el uso de nombres de tipo específicos del lenguaje en parámetros y miembros, así como identificadores de tipo de datos en parámetros. Los nombres de tipo pueden no ser intuitivos para todos los desarrolladores. Se recomienda seleccionar un nombre genérico, como 'value', en su lugar. Si esto no es suficiente, procure usar el nombre de tipo que se define en la biblioteca de .NET Framework y evite totalmente los nombres de tipo específicos del lenguaje. Algunos ejemplos de nombres de tipo específicos de C# son 'float' (use 'Single' si un nombre genérico no es suficiente) y 'ulong' (use 'UInt64' si un nombre genérico no es suficiente).</Description>
+   <Resolution Name="LanguageIndependentMemberParameter">En el miembro {0}, considere reemplazar el identificador del tipo de datos '{1}' en el nombre del parámetro {2} por un término más genérico, como 'value'.</Resolution>
+   <Resolution Name="LanguageSpecificMember">Considere reemplazar el identificador del tipo de datos específico del lenguaje '{0}' en el nombre del miembro {1} por un equivalente independiente del lenguaje o un término más genérico, como 'value'.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/bb531486.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Error</MessageLevel>
+   <File Name="namingrules.dll" Version="12.0.0.0" />
+  </Rule>
+  <Rule TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014">
+   <Name>Marque los ensamblados con CLSCompliantAttribute</Name>
+   <Description>Los ensamblados deben establecer explícitamente ser conformes a CLS usando el atributo CLSCompliant. Un ensamblado sin este atributo no es conforme a CLS. Los ensamblados, módulos y tipos pueden ser conformes a CLS incluso si alguna parte del ensamblado, módulo o tipo no son conformes a CLS. Se aplican las siguientes reglas: 1) Si el elemento está marcado como CLSCompliant, cualquier miembro no compatible debe tener el atributo CLSCompliant presente con el argumento establecido como false. 2) Se debe proporcionar un miembro alternativo conforme a CLS comparable con cada miembro que no sea conforme a CLS.</Description>
+   <Resolution Name="Default">Marque {0} con CLSCompliant(true) porque expone tipos visibles externamente.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182156.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="designrules.dll" Version="12.0.0.0" />
+  </Rule>
+  <Rule TypeName="MarkAssembliesWithComVisible" Category="Microsoft.Design" CheckId="CA1017">
+   <Name>Marque los ensamblados con ComVisibleAttribute</Name>
+   <Description>El atributo System.Runtime.InteropServices.ComVisible indica si los clientes COM pueden utilizar la biblioteca. El buen diseño establece que los desarrolladores indiquen explícitamente la visibilidad COM. El valor predeterminado para este atributo es 'true'. Sin embargo, el mejor diseño consiste en marcar el ensamblado ComVisible como false y, a continuación, marcar los tipos, interfaces y miembros individuales como ComVisible igual a true cuando sea conveniente.</Description>
+   <Resolution Name="NoAttribute">Puesto que {0} expone tipos visibles externamente, márquelo con ComVisible(false) en el nivel de ensamblado y después marque todos los tipos del ensamblado que se deben exponer a clientes COM con ComVisible(true).</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182157.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError, Error</MessageLevel>
+   <File Name="designrules.dll" Version="12.0.0.0" />
+  </Rule>
+  <Rule TypeName="MarkAssembliesWithNeutralResourcesLanguage" Category="Microsoft.Performance" CheckId="CA1824">
+   <Name>Marque los ensamblados con NeutralResourcesLanguageAttribute</Name>
+   <Description>El atributo NeutralResourcesLanguage informa a ResourceManager del lenguaje usado para presentar los recursos de referencia cultural neutra para un ensamblado. Cuando se buscan recursos en la misma referencia cultural que el lenguaje de recursos neutro, ResourceManager usa automáticamente los recursos del ensamblado principal, en lugar de buscar un ensamblado satélite con la cultura de la interfaz de usuario actual para el subproceso actual. Esto mejorará el rendimiento de las búsquedas del primer recurso que cargue y puede reducir el espacio de trabajo.</Description>
+   <Resolution Name="Default">Puesto que el ensamblado {0} contiene un archivo de recursos basado en ResX, márquelo con el atributo NeutralResourcesLanguage, especificando el lenguaje de los recursos del ensamblado. Esto puede mejorar el rendimiento de las búsquedas la primera vez que se recupera un recurso.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/bb385967.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="12.0.0.0" />
+  </Rule>
+  <Rule TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822">
+   <Name>Marcar el miembro como estático</Name>
+   <Description>Los métodos que no tienen acceso a los datos de instancias o a los métodos de instancias de llamadas se pueden marcar como estáticos (compartidos en VB). Después de esto, el compilador emitirá sitios de llamadas no virtuales para estos miembros, lo que impedirá la comprobación en tiempo de ejecución de cada llamada que garantice que el puntero del objeto actual no es nulo. Esto puede dar lugar a un mejor rendimiento en el código sensible al rendimiento. En algunos casos, la imposibilidad de tener acceso a la instancia del objeto actual representa un problema de corrección.</Description>
+   <Resolution Name="Default">El parámetro 'this' (o 'Me' en Visual Basic) de {0} no se usa nunca. Marque el miembro como static (o Shared en Visual Basic) o use 'this'/'Me' en el cuerpo del método o al menos un descriptor de acceso de la propiedad, si procede.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms245046.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="12.0.0.0" />
+  </Rule>
+  <Rule TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060">
+   <Name>Mueva P/Invokes a la clase NativeMethods</Name>
+   <Description>Este tipo contiene miembros con el atributo DllImport. Los miembros con el atributo DllImport deben estar contenidos en clases denominadas NativeMethods, SafeNativeMethods o UnsafeNativeMethods.</Description>
+   <Resolution Name="Default">Puesto que es un método P/Invoke, se debe definir {0} en una clase con el nombre NativeMethods, SafeNativeMethods o UnsafeNativeMethods.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182161.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalWarning</MessageLevel>
+   <File Name="designrules.dll" Version="12.0.0.0" />
+  </Rule>
+  <Rule TypeName="NestedTypesShouldNotBeVisible" Category="Microsoft.Design" CheckId="CA1034">
+   <Name>Los tipos anidados no deben ser visibles</Name>
+   <Description>No utilice tipos anidados públicos, protegidos o protegidos internamente (Protected Friend) como forma de agrupar tipos. Utilice los espacios de nombres para este propósito. Hay escenarios muy limitados donde los tipos anidados son el mejor diseño. Asimismo, la accesibilidad de miembro de un tipo anidado no es fácilmente comprensible por todas las audiencias. Las enumeraciones están exentas de esta regla.</Description>
+   <Resolution Name="Default">No anide el tipo {0}. Como alternativa, cambie su accesibilidad para que no esté visible externamente.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182162.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="90">Error</MessageLevel>
+   <File Name="designrules.dll" Version="12.0.0.0" />
+  </Rule>
+  <Rule TypeName="No pasar cadenas literal como parámetros localizados" Category="Microsoft.Globalization" CheckId="CA1303">
+   <Name>No pasar cadenas literal como parámetros localizados</Name>
+   <Description>Las cadenas de tipo literal incrustadas en el código fuente son difíciles de localizar. Evite pasar cadenas literal como argumentos en circunstancias donde, por lo general, se espera una cadena localizada.</Description>
+   <Resolution Name="KnownValue">El método {0} pasa una cadena literal como parámetro '{1}' de una llamada a {2}. En su lugar, recupere las siguientes cadenas de una tabla de recursos: {3}.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182187.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="12.0.0.0" />
+  </Rule>
+  <Rule TypeName="OperationsShouldNotOverflow" Category="Microsoft.Usage" CheckId="CA2233">
+   <Name>Las operaciones no deben desbordarse</Name>
+   <Description>No se deben realizar las operaciones aritméticas sin validar primero los operandos para evitar el desbordamiento.</Description>
+   <Resolution Name="Default">Corrija el desbordamiento potencial en la operación '{0}' en {1}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182354.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">CriticalWarning</MessageLevel>
+   <File Name="usagerules.dll" Version="12.0.0.0" />
+  </Rule>
+  <Rule TypeName="PInvokeDeclarationsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1901">
+   <Name>Las declaraciones P/Invoke deben ser portátiles</Name>
+   <Description>.</Description>
+   <Resolution Name="Parameter">Como se declara en el código, el parámetro {0} del elemento P/Invoke {1} será de {2} bytes en plataformas {3}. Esto no es correcto, puesto que la declaración nativa actual de esta API indica que debería ser de {4} bytes en plataformas {3}. Consulte la documentación de Platform SDK de MSDN para obtener ayuda para determinar qué tipo de datos debería usarse en lugar de {5}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182284(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="portabilityrules.dll" Version="12.0.0.0" />
+  </Rule>
+  <Rule TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401">
+   <Name>Los elementos P/Invoke no deben estar visibles</Name>
+   <Description>La capa de interoperabilidad no debe ser pública. No debe aplicar el atributo DllImport en miembros accesibles públicamente (public o protected).</Description>
+   <Resolution Name="Default">Cambie la accesibilidad del elemento P/Invoke {0} para que no esté visible desde fuera del ensamblado.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182209.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="50">CriticalError</MessageLevel>
+   <File Name="interoperabilityrules.dll" Version="12.0.0.0" />
+  </Rule>
+  <Rule TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804">
+   <Name>Quitar variables locales no utilizadas</Name>
+   <Description>Quite las variables locales que no se utilizan o que están asignadas sólo en implementaciones de métodos.</Description>
+   <Resolution Name="Default">{0} declara una variable, {1}, de tipo {2}, que no se usa nunca o sólo se asigna. Use esta variable o quítela.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182278.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="12.0.0.0" />
+  </Rule>
+  <Rule TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305">
+   <Name>Especificar IFormatProvider</Name>
+   <Description>Si existe una sobrecarga que toma un argumento IFormatProvider, se debe llamar siempre en favor de una sobrecarga que no lo haga. Algunos métodos del runtime convierten un valor a o desde una representación de cadena y toman un parámetro de cadena que contiene uno o varios caracteres, denominados especificadores de formato, que indican cómo se debe convertir el valor. Si el significado del especificador de formato varía por referencia cultural, un objeto de formato proporciona los caracteres usados en la representación de cadena. En escenarios donde el comportamiento de ordenación y comparación no debería cambiar nunca entre referecias culturales, especifique CultureInfo.InvariantCulture; de lo contrario, especifique CultureInfo.CurrentCulture.</Description>
+   <Resolution Name="IFormatProviderAlternate">Puesto que el comportamiento de {0} podría variar en función de la configuración regional del usuario actual, reemplace esta llamada en {1} por una llamada a {2}. Si el resultado de {2} estará basado en los datos proporcionados por el usuario, especifique {3} como parámetro 'IFormatProvider'. De lo contrario, si el resultado estará basado en datos almacenados a los que tiene acceso el software, como cuando se cargan desde un disco o una base de datos, especifique {4}.</Resolution>
+   <Resolution Name="IFormatProviderAlternateString">Puesto que el comportamiento de {0} podría variar en función de la configuración regional del usuario actual, reemplace esta llamada en {1} por una llamada a {2}. Si el resultado de {2} se mostrará al usuario, especifique {3} como parámetro 'IFormatProvider'. De lo contrario, si el resultado se almacenará y será el software quien tenga acceso a él, como cuando se almacena en un disco o en una base de datos, especifique {4}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182190.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="globalizationrules.dll" Version="12.0.0.0" />
+  </Rule>
+  <Rule TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101">
+   <Name>Especifique cálculo de referencias para argumentos de cadena P/Invoke</Name>
+   <Description>Cuando se calculan las referencias de cadenas como ANSI (o Auto en Win9x), es posible que cambien algunos caracteres. Si está activada la asignación de ajuste perfecto, en las cadenas que aparecen diferentes en Unicode se calcularán las referencias como cadenas ANSI idénticas, lo que puede dar lugar a decisiones de seguridad incorrectas. Si se desactiva la asignación de ajuste perfecto, se reduce el riesgo, ya que a todos los caracteres sin equivalente se les asigna '?'. Asimismo, tenga en cuenta que CharSet.Ansi es el valor predeterminado para todos los cálculos de referencias de cadenas. El cálculo de referencias Unicode se debe especificar de forma explícita, ya sea con el valor CharSet de DllImport o StructLayout, o bien con el atributo MarshalAs con un tipo Unicode no administrado (o dependiente del sistema).</Description>
+   <Resolution Name="ParameterImplicitAnsi">Para reducir el riesgo de la seguridad, calcule las referencias del parámetro {0} como Unicode, estableciendo DllImport.CharSet en CharSet.Unicode, o bien calculando las referencias del parámetro de forma explícita como UnmanagedType.LPWStr. Si necesita calcular las referencias de esta cadena como ANSI o dependiente del sistema, especifique MarshalAs de forma explícita y establezca BestFitMapping=false. Para mayor seguridad, establezca también ThrowOnUnmappableChar=true.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182319.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Error</MessageLevel>
+   <File Name="globalizationrules.dll" Version="12.0.0.0" />
+  </Rule>
+  <Rule TypeName="SpecifyMessageBoxOptions" Category="Microsoft.Globalization" CheckId="CA1300">
+   <Name>Especifique MessageBoxOptions</Name>
+   <Description>Para poder ejecutar correctamente los sistemas de derecha a izquierda, todas las llamadas realizadas a MessageBox.Show deben utilizar la sobrecarga que especifica MessageBoxOptions como un argumento. Los programas deben detectar si se están ejecutando en un sistema de derecha a izquierda en tiempo de ejecución y pasar el valor MessageBoxOptions apropiado para que se muestre correctamente.</Description>
+   <Resolution Name="Default">Cambie {0} para que llame a la sobrecarga MessageBox.Show que especifica MessageBoxOptions y asegúrese de establecer MessageBoxOptions.RightAlign y MessageBoxOptions.RtlReading si RightToLeft está establecido en RightToLeft.Yes en el control primario.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182191.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="globalizationrules.dll" Version="12.0.0.0" />
+  </Rule>
+  <Rule TypeName="TestForEmptyStringsUsingStringLength" Category="Microsoft.Performance" CheckId="CA1820">
+   <Name>Comprobar si las cadenas están vacías mediante la longitud de cadena</Name>
+   <Description>Para comprobar si las cadenas están vacías, observe si String.Length es igual a cero. Construcciones como "".Equals(someString) y String.Empty.Equals(someString) son menos eficientes que la comprobación de la longitud de la cadena. Reemplácelas con la comprobación someString.Length == 0.</Description>
+   <Resolution Name="IsNullOrEmpty">Reemplace la llamada a {0} en {1} con una llamada a 'String.IsNullOrEmpty'.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182279.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="12.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Categoría</String>
+  <String Key="Certainty">Certeza</String>
+  <String Key="CollapseAll">Contraer todo</String>
+  <String Key="CheckId">Comprobar id.</String>
+  <String Key="Error">Error</String>
+  <String Key="Errors">errores</String>
+  <String Key="ExpandAll">Expandir todo</String>
+  <String Key="Help">Ayuda</String>
+  <String Key="Line">Línea</String>
+  <String Key="Messages">mensajes</String>
+  <String Key="LocationNotStoredInPdb">[Ubicación no almacenada en Pdb]</String>
+  <String Key="Project">Proyecto</String>
+  <String Key="Resolution">Resolución</String>
+  <String Key="Rule">Regla</String>
+  <String Key="RuleFile">Archivo de regla</String>
+  <String Key="RuleDescription">Descripción de la regla</String>
+  <String Key="Source">Origen</String>
+  <String Key="Status">Estado</String>
+  <String Key="Target">Círculos concéntricos</String>
+  <String Key="Warning">Advertencia</String>
+  <String Key="Warnings">advertencias</String>
+  <String Key="ReportTitle">Informe de análisis del código</String>
+ </Localized>
+</FxCopReport>
