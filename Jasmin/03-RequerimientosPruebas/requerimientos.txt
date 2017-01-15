@@ -1,0 +1,5 @@
+Procesador de palabras
+
+- Dado una frase eliminar los espacios en blanco y las palabras de dicha frase unidas.
+- Dado una frase eliminar todas las vocales presentes en la frase.
+- Dado una frase eliminar todas las consonantes presentes en la frase.
